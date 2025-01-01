@@ -1,5 +1,6 @@
 :root {
   --baseFont: 'Montserrat', serif;
+  --Background-color-base: #f9fafb;
 }
 
 * {
@@ -14,7 +15,10 @@ body {
   height: 100vh;
   width: 100vw;
   font-family: var(--baseFont);
+  background-color: var(--Background-color-base);
 }
+
+/* left side page  */
 
 .layout-content {
   display: flex;
@@ -60,4 +64,32 @@ body {
   width: 50%;
   height: 20vh;
   display: block;
+}
+
+.copyright {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #fff;
+}
+
+.copyright a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000;
+}
+
+/* form right side */
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 50% 5rem 5rem;
+}
+
+.heading-text {
+  align-content: center;
+  margin-left: 3rem;
+  width: 75%;
+  font-size: 0.875rem;
 }
