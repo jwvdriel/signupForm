@@ -1,2 +1,6 @@
 # signupForm
-simple signup form
+
+signUp form challenge odin project
+
+used HTML and css 
+-
