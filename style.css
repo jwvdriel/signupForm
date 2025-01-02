@@ -84,7 +84,11 @@ body {
 main {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 50% 5rem 5rem;
+  grid-template-rows: 52% 5rem 5rem;
+}
+
+h1 {
+  font-size: 1.4rem;
 }
 
 .heading-text {
@@ -92,4 +96,88 @@ main {
   margin-left: 3rem;
   width: 75%;
   font-size: 0.875rem;
+}
+
+.form-layout {
+  background-color: #fff;
+  height: 25vh;
+  position: relative;
+  bottom: 3rem;
+  padding-left: 3rem;
+  box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+.form-container {
+  display: flex;
+}
+
+.left_input_panel,
+.right_input_panel {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 40%;
+  margin-top: 1rem;
+}
+
+label {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+input {
+  padding-right: 6rem;
+  height: 2rem;
+  border-radius: 6px;
+  border: 3px solid #ccc;
+  outline: none;
+  font-weight: 600;
+  text-indent: 1rem;
+}
+
+.password:valid {
+  border: 2px solid red !important;
+}
+
+input:not(.password):focus {
+  border: 2px solid blue;
+  box-shadow: 10px 10px 15px -5px rgba(0, 0, 0, 0.5);
+  font-weight: 600;
+}
+
+.middle-margin-top {
+  margin-top: 1rem;
+}
+
+.middle-margin-bottom {
+  margin-bottom: 1rem;
+}
+
+.beneath_form_footer {
+  position: relative;
+  top: 5rem;
+}
+
+button {
+  width: 20%;
+  padding: 0.8rem;
+  color: #fff;
+  background-color: #596d48;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  box-shadow: 5px 10px 15px -5px rgba(0, 0, 0, 0.5);
+}
+
+.beneath_form_footer p {
+  margin-top: 2rem;
+  font-weight: 500;
+}
+
+.beneath_form_footer p > a {
+  text-decoration: none;
+  color: #596d48;
+  font-weight: 700;
 }
